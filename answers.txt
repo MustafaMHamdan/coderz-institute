@@ -1,0 +1,2 @@
+1- استخدمت browser tab title:Title <title>
+2- استخدمت element for the main heading:H1 <h1>

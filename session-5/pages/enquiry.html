@@ -1,15 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>الإستفسارات</title>
 </head>
+
 <body>
-      <nav>
-      <a href="../index.html">الرئيسية</a><br />
-      <a href="schedule.html">المواعيد</a><br />
-      <a href="enquiry.html">الاستفسار </a>
+    <nav>
+        <a href="../index.html">الرئيسية</a><br />
+        <a href="schedule.html">المواعيد</a><br />
+        <a href="enquiry.html">الاستفسار </a><br /><br />
     </nav>
+    <h1>استفسر عن كورس</h1>
+    <form>
+        <label for="fullname">الاسم الكامل</label>
+        <input id="fullname" name="fullname" type="text" placeholder="مثال: مصطفى حمدان" autocomplete="name" />
+        <br />
+        <label for="email">البريد الإلكتروني</label>
+        <input id="email" name="email" type="email" placeholder="example@email.com" autocomplete="email" /><br />
+        <label for="phonenumber">رقم الهاتف</label>
+        <input id="phonenumber" name="phonenumber" type="tel" placeholder="0790000000" autocomplete="tel" /><br />
+
+        <label for="course">الكورس</label>
+
+        <select id="course" name="course">
+            <option value="">اختر كورسًا</option>
+            <option value="content">HTML Content</option>
+
+            <option value="forms">HTML Forms</option>
+        </select>
+        <br />
+        <label for="seats">عدد المقاعد</label>
+
+        <input id="seats" name="seats" type="number" value="1" min="1" /><br />
+        <label for="preferred-date">التاريخ المفضل</label>
+
+        <input id="preferred-date" name="preferred-date" type="date" /><br />
+        <label for="Inquiry_message">الاستفسار</label>
+
+        <textarea id="Inquiry_message" name="Inquiry_message" rows="6"></textarea><br />
+        <button type="submit">إرسال</button>
+    </form>
 </body>
+
 </html>

@@ -1,0 +1,11 @@
+index.html: styles.css
+
+courses.html: ../styles.css
+
+
+.course-card[data-status="full"] .status
+
+
+يحدد هذا المحدد عنصر span الذي يعرض حالة الكورس والموجود داخل بطاقة كورس تحمل القيمة full في الخاصية data-status
+
+أي أنه يستهدف حالة الكورس الذي اكتمل العدد ويجعل خلفية نص الحالة باللون الرمادي

@@ -1,0 +1,91 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F4F7F8;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px 25px;
+
+    background-color: #FFFFFF;
+    border: 2px solid #12546C;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 15px rgba(18, 84, 108, 0.15);
+    text-align: right;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    background-color: #E5F7E8;
+    color: #237A36;
+    padding: 7px 13px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Main heading */
+h1 {
+    color: #12546C;
+    font-size: 22px;
+    margin: 0 0 10px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+/* Description */
+.description {
+    color: #5F6F78;
+    font-size: 12px;
+    margin: 0 0 15px;
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+/* Buttons */
+.buttons {
+    margin-bottom: 12px;
+}
+
+button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Primary button */
+.primary {
+    background-color: #12546C;
+    color: #FFFFFF;
+    border: 2px solid #12546C;
+}
+
+/* Secondary button */
+.secondary {
+    background-color: #FFFFFF;
+    color: #12546C;
+    border: 2px solid #12546C;
+    font-family: Tahoma, Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Note */
+.note {
+    color: #5F6F78;
+    font-size: 12px;
+    margin: 0;
+    font-weight: bold;
+}

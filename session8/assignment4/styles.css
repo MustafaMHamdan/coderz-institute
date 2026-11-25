@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.board {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.column {
+  flex: 1 1 280px;
+  min-width: 0;
+  padding: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+}
+
+.column-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 46px;
+  padding: 0 4px;
+}
+
+.column-header h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.count {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task-card {
+  min-height: 132px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+
+  box-shadow: 0 1px 2px rgb(15 23 42 / 4%);
+}
+
+.task-card h3 {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+.task-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.tag {
+  margin-top: auto;
+  padding: 4px 12px;
+
+  border-radius: 9px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 800;
+  direction: ltr;
+}
+
+.start .count,
+.start .tag {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.working .count,
+.working .tag {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.done .count,
+.done .tag {
+  background: #dcfce7;
+  color: #166534;
+}
